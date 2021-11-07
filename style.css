@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap");
+
+body,
+html {
+	height: 100%;
+	display: grid;
+	background-color: #ffdd40;
+}
+
+p {
+	white-space: nowrap;
+	font-family: "Fraunces", serif;
+	font-size: 4em;
+	margin: auto;
+	animation: shadow 10s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes shadow {
+	from {
+		text-shadow: 0 -0em 2em #ffdd40, 0 -0em 2em #ffdd40, 0 -0em 2em #ffdd40,
+			0 -0em 2em #ffdd40, 0 -0em 2em #ffdd40, 0 0em 2em #ffdd40, 0 0em 2em #ffdd40,
+			0 0em 2em #ffdd40, 0 0em 2em #ffdd40, 0 0em 2em #ffdd40;
+	}
+
+	40% {
+		text-shadow: -5em -5em 0px #316655, -4em -4em 0px #5a7e51,
+			-3em -3em 0px #83964d, -2em -2em 0px #adad48, -1em -1em 0px #d6c544,
+			1em 1em 0px #d6c544, 2em 2em 0px #adad48, 3em 3em 0px #83964d,
+			4em 4em 0px #5a7e51, 5em 5em 0px #316655;
+	}
+
+	90% {
+		text-shadow: 5em -5em 0px #316655, 4em -4em 0px #5a7e51, 3em -3em 0px #83964d,
+			2em -2em 0px #adad48, 1em -1em 0px #d6c544, -1em 1em 0px #d6c544,
+			-2em 2em 0px #adad48, -3em 3em 0px #83964d, -4em 4em 0px #5a7e51,
+			-5em 5em 0px #316655;
+	}
+
+	to {
+		text-shadow: 0 -0em 2em #ffdd40, 0 -0em 2em #ffdd40, 0 -0em 2em #ffdd40,
+			0 -0em 2em #ffdd40, 0 -0em 2em #ffdd40, 0 0em 2em #ffdd40, 0 0em 2em #ffdd40,
+			0 0em 2em #ffdd40, 0 0em 2em #ffdd40, 0 0em 2em #ffdd40;
+	}
+}
